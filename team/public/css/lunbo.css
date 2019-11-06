@@ -1,0 +1,124 @@
+*{
+    margin:0;padding:0;
+    text-decoration: none;
+    list-style: none;
+    z-index: 800;
+  }
+  #main{
+    height:824px;
+    position: relative;
+    z-index: 1;
+  }
+  #smtitle{
+    position: absolute;
+    top:55px;right:10px;
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  #banner{
+  width: 988px;height:824px;
+  overflow: hidden;
+  margin:auto;
+  background-color:#FAE8C8;
+  position: relative;
+  z-index:850;
+  }
+  .fname{
+    height: 24px;
+    line-height: 24px;
+    margin-left: 14px;
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .fhot{
+    height: 26px;
+    line-height: 26px;
+    padding: 0px 14px 0px;
+    font-size: 12px;
+    color: #999;
+  }
+  .fauthor{
+  height: 23px;
+  line-height: 23px;
+  padding: 0px 14px 0px;
+  font-size: 12px;
+  color: #ff3232;
+}
+  #sum{
+    height:824px; 
+    width:4940px;
+    z-index: 900;
+  }
+  #sum .title{
+    display: block;
+    width:988px;height: 120px;
+    text-align: center;
+    font-size:24px;
+    line-height: 120px;
+    color: #222;
+    font-family: Microsoft Yahei;
+  }
+  #sum>li{
+    width: 988px;height:704px;
+    float: left;
+  }
+  #sum>li>ul{
+    width: 988px;height:704px;
+  }
+  .transition{
+    transition: all 1s linear;
+  }
+  #sum>li>ul>li{
+    float: left;
+    height: 332px;
+    margin:0 20px 20px 0;
+    background: #fff;
+  }
+  #sum>li>ul>li:nth-child(4),#sum>li>ul>li:nth-child(8){
+    margin-right: 0px;
+  }
+  #sum>li>ul>li>div{
+    font-size: 14px;
+    padding: 5px;
+    width:222px;height:90px;
+    overflow: hidden;
+  }
+  #sum .dis{
+   padding:10px 0 0 10px;
+   overflow: hidden;
+   transition: all 0.5s linear;
+  }
+  #sum>li>ul>li:hover .dis{
+    margin-top:-100px;
+    background:#f5f5f5;
+  } 
+  #sum .dis>p *{
+   display: inline-block;
+   vertical-align:middle;
+   height:20px;
+    }
+  #sum .dis>p:nth-child(4), #sum .dis>p:nth-child(5){
+    margin-top:25px;
+  }  
+  #btn-left{
+    background: url(../img/index_img/btn-left.png) 0px 0px no-repeat;
+    background-size: 80px 80px;
+    left:-100px;
+  }
+  #btn-right{
+    background: url(../img/index_img/btn-right.png) 0px 0px no-repeat;
+    background-size: 80px 80px;
+    right:-100px;
+  }
+  #btn-left,#btn-right{
+    width:80px;height:100%;
+    position: absolute;
+    top:50%;margin-top:-65px;
+    z-index: 1000;
+    cursor: pointer;
+  }

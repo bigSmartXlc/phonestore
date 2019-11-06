@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+	<meta charset='UTF-8'>
+	<title>详情页</title>
+</head>
+<script></script>
+<link rel="stylesheet" href="css/comm.css">
+<link rel="stylesheet" href="css/details.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/footer.css">
+<style>
+</style>
+<body>
+	<header></header>
+	<div id="app">
+		<div class="content">
+			<div class="top">
+				<a href="index.html">首页 ></a><a href="">菜谱大全 ></a><a href="" v-text="foodname"></a>
+			</div>
+			<div class="detail">
+				<img :src="pic" alt="">
+				<div>
+					<div id="z-in">
+						<span id="fname" v-text="foodname"></span>
+						<span><a id="sc">收藏(1)</a><a id="fx">分享到:</a></span>
+						<br>
+						<ul>
+							<li id="function" v-for="(item,i) of foodfunction" :key=i>{{foodfunction[i]}}</li>
+						</ul>
+					</div>
+					<ul>
+						<li>
+							<p class="fs-15">工艺</p>
+							<p id="coke" class="fs-14" v-text="coke"></p>
+						</li>
+						<li>
+							<p class="fs-15">难度</p>
+							<p class="fs-14"><img src="img/icon/2.png" alt=""><span v-text="diffficult"></span></p>
+						</li>
+						<li>
+							<p class="fs-15">人数</p>
+							<p class="fs-14"><img src="img/icon/3.png" alt=""><span v-text=`${member}人`></span></p>
+						</li>
+						<li>
+							<p class="fs-15">口味</p>
+							<p id="coke" class="fs-14" v-text="taste"></p>
+						</li>
+						<li>
+							<p class="fs-15">准备时间</p>
+							<p class="fs-14"><img src="img/icon/4.png" alt=""><span v-text=`&lt;${readytime}分钟`></span></p>
+						</li>
+						<li>
+							<p class="fs-15">烹饪时间</p>
+							<p class="fs-14"><img src="img/icon/1.png" alt=""><span v-text=`&lt;${coketime}分钟`></span></p>
+						</li>
+					</ul>
+					<div>
+						<p>作者：<a href="" v-text="author"></a></p>
+						<p class="fs-15 my-10">菜谱：21　/　关注：1　/　粉丝：1</p>
+						<p class="fs-15 my-10">2019-07-04　/　1267人看过</p>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div>
+					<p v-text="details"></p>
+				</div>
+				<p class="fs-33">用料</p>
+				<div>	
+					<div class="h-135 p-re">
+						<div class="w-50-135">
+							<a href="">主料</a>
+						</div>
+						<ul class="w-590-135">
+							<li class="w-290-65" v-for="(item,i) of making" :key=i><span class="ml-20">{{making[i]}}</span><span class="f-r mr-20 fs-15 c-ccc">6个</span></li>
+						</ul>
+					</div>
+					<div class="p-re">
+						<div class="w-50-135 fl">
+							<a href="">辅料</a>
+						</div>
+						<ul class="w-590-135 p-re">
+							<li class="w-290-65" v-for="(item,i) of support" :key=i><span class="ml-20">{{support[i]}}</span><span class="f-r mr-20 fs-15 c-ccc">6个</span></li>
+						</ul>
+					</div>
+					</div>
+			</div>
+			<div id="ddd">
+				<p>广</p>
+				<p>告</p>
+				<p>位</p>
+				<p>招</p>
+				<p>租</p>
+			</div>
+			<div class="w-670 bg-w">
+				<p class="w-670-67" v-text=`${foodname}的做法`></p>
+				<ul class="py-20">
+					<li class="f-l" v-for="(item,i) of teps" :key=i> <span class="w-100" v-text=`${i+1}.`></span>
+						<div class="w-560-100">{{teps[i]}}</div>
+					</li>
+				</ul>
+				<div></div>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+	</div>
+	<footer></footer>
+	<script src="js/vue.js"></script>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/axios.min.js"></script>
+	<script src="js/details.js"></script>
+	<script src="js/footer.js"></script>
+	<script>
+		var ddd = document.querySelectorAll("#ddd>p");
+		var t = setInterval(function () {
+			for (var item of ddd) {
+				item.style.color = `rgb(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)})`
+			}
+		}, 500)
+	</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "pages": [
+  "pages/xz/mymovie",
+  "pages/xz/happy",
+  "pages/xz/index",
+  "pages/xz/comment",
+  "pages/xz/map"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff6700",
+    "navigationBarTitleText": "学子商城",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#1afa29",
+    "list": [
+      {
+        "pagePath": "pages/xz/happy",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_active.png"
+      },
+      {
+        "pagePath": "pages/xz/map",
+        "text": "地图",
+        "iconPath": "images/map.png",
+        "selectedIconPath": "images/map_active.png"
+      },
+      {
+        "pagePath": "pages/xz/mymovie",
+        "text": "喜欢",
+        "iconPath": "images/myfa.png",
+        "selectedIconPath": "images/myfa_active.png"
+      }
+     
+    ]
+  }
+}

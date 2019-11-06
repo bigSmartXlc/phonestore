@@ -1,0 +1,15 @@
+<!--pages/xz/index.wxml-->
+<view>学子商城</view>
+<van-button type='info'>信息按钮</van-button>
+<van-button type='danger'>危险按钮</van-button>
+<van-button type='primary'>主要按钮</van-button>
+<van-button type='warning'>警告按钮</van-button>
+<van-button type='primary' plain>朴素按钮</van-button>
+<van-button type='primary' plain hairline>朴素细边框</van-button>
+<van-button type='primary' disabled>禁用按钮</van-button>
+<van-button type='primary' loading>加载按钮</van-button>
+<van-button type='danger' size="large">大按钮</van-button>
+<van-button type='warning' size="smaall">小按钮</van-button>
+<van-button type='primary' size="mini">小按钮</van-button>
+
+

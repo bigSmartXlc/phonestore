@@ -1,0 +1,16 @@
+<!--pages/xz/happy.wxml-->
+<text>电影列表</text>
+<button bindtap='callmovie'>获取电影</button>
+<van-card
+  tag="正在上映"
+  desc="{{list[index].genres}}"
+  title="《{{list[index].title}}》"
+  thumb="{{list[index].images.small}}" wx:for="{{list}}" wx:key="index">
+  <view slot="bottom">
+    <text>时长：{{list[index].durations}}</text>
+    <text>------上映年份：{{list[index].year}}</text>
+    <van-button type='danger' size='large' bindtap='details' data-id="{{list[index].id}}">电影详情</van-button>
+  </view>
+  </van-card>
+
+

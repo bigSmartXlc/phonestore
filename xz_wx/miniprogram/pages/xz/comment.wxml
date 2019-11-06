@@ -1,0 +1,24 @@
+<!--pages/xz/comment.wxml-->
+<view>电影详情</view>
+<view style="background:url({{list.images.large}}) no-repeat top">
+<van-card
+  tag="正在上映"
+  desc="{{list.genres}}"
+  title="《{{list.title}}》"
+  thumb="{{list.images.small}}">
+  <view slot="bottom">
+    <view>时长：{{list.durations}}</view>
+    <view>上映年份：{{list.year}}</view>
+    <view>评分：{{list.rating.average}}分</view>
+    <view>上映地点：{{list.countries}}</view>
+  </view>
+  </van-card>
+</view>
+<view style='font-size:25rpx'>{{list.summary}}</view>  
+<van-cell-group>
+<van-field placeholder="文明发言，共建和谐" border="{{false}}" bind:change="onContentChange"></van-field>
+</van-cell-group>
+ <van-button type='danger' size='large' bindtap='selectimage'>上传图片</van-button>
+ <view ><image wx:for="{{images}}" wx:key="index" src='{{images[index]}}' style='width:33%'></image></view>
+<van-rate value="{{value}}" bind:change="onScoreChange" />
+ <van-button type='primary' size='large' bindtap='submit'>发表评论</van-button>

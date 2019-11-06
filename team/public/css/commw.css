@@ -1,0 +1,14 @@
+*{margin:0;padding: 0;box-sizing: border-box;}
+button{border:0px;}
+ul{list-style: none;}
+a{text-decoration: none;}
+.d-inline{display: inline;}
+.d-inline-block{display: inline-block;}
+.d-block{display: block;}
+.p-re{position: relative;}
+.p-ab{position: absolute;}
+.f-l{float: left;}
+.f-r{float: right;}
+.border{border:1px solid black;}
+.w-990{width:990px;}
+.mg-auto{margin:0 auto;}
